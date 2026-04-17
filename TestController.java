@@ -35,6 +35,6 @@ public class TestController {
 
     @PostMapping("/model")
     public ResponseEntity<Car> createModel(@RequestBody Car car) {
-        return ResponseEntity.ok(new Car(car.brand(), car.model()));
+        return ResponseEntity.ok(new Car(car.getBrand(), car.getModel()));
     }
 }
